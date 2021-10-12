@@ -1,12 +1,13 @@
 /* .App {
   text-align: center;
 } */
-.div{
+#root{
 display:flex;
 font-size: larger;
 flex-direction: column;
+justify-items:center;
 align-items: center;
-margin:0%;
+margin:10px auto;
   }
 /* }
 .App-logo {
