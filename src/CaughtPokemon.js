@@ -1,18 +1,19 @@
 import { useState } from "react";
 
 const CaughtPokemon = (props) => {
-  let pokemons = ["pokemon1", "pokemon2", "pokemon3", "pokemon4"];
-  let [Caught, setCaught] = useState(0);
+  let pokemons = ["pokemon0", "pokemon1", "pokemon2", "pokemon3","pokemon4"];
+  let [Caught, setCaught] = useState([]);
   const isCaught = () => {
-    setCaught((Caught = Math.floor(Math.random() * pokemons.length)));
+    let randomPokemon = Math.floor(Math.random() * pokemons.length);
+    setCaught(pokemons[randomPokemon]);
  };
   return (
     <div>
       <p>Caught these Pokemon on {props.date}</p>
       <button onClick={() =>isCaught()}>
-      Catch pokemon </button>
+        Catch pokemon </button>
     <ul>
-        <li> {pokemons[Caught]}</li>
+        <li> {Caught}</li>
             </ul>
     </div>
   );
