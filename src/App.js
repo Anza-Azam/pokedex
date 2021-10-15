@@ -2,7 +2,10 @@ import React from "react";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+
 import "./App.css";
+
 
 const App = () => {
   function logWhenClicked() {
@@ -16,9 +19,10 @@ const App = () => {
   const abilities = ["Anticipation", "Adaptability", "Run-Away"];
   return (
     <>
-      <Logo appName="Pokedex" handleClick={log} poke={logWhenClicked}/>
+      <Logo appName="Pokedex" handleClick={log} poke={logWhenClicked} />
       <BestPokemon abilities={abilities} poke={logWhenClicked} />
       <CaughtPokemon date={date} />
+      <PokemonMovesSelector />
     </>
   );
 };
