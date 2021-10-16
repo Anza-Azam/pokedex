@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 import PokemonMovesSelector from "./PokemonMovesSelector";
-
+import PokemonCity from "./src/PokemonCity.js";
 import "./App.css";
 
 
@@ -23,6 +23,7 @@ const App = () => {
       <BestPokemon abilities={abilities} poke={logWhenClicked} />
       <CaughtPokemon date={date} />
       <PokemonMovesSelector />
+      <PokemonCity />
     </>
   );
 };
