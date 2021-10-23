@@ -2,9 +2,11 @@ import React from "react";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-import PokemonMovesSelector from "./PokemonMovesSelector";
+
 import PokemonCity from "./src/PokemonCity.js";
 import "./App.css";
+// import PokemonMoves from "./src/PokemonMoves";
+import PokemonMovesSelector from "./src/PokemonMovesSelector";
 
 
 const App = () => {

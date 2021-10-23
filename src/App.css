@@ -9,6 +9,7 @@ justify-items:center;
 align-items: center;
 margin:10px auto;
   }
+  li{list-style-type: none;}
 /* }
 .App-logo {
   height: 40vmin;

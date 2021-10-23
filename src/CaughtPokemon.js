@@ -11,7 +11,7 @@ const CaughtPokemon = (props) => {
   const isCaught = () => {
    // let randomPokemon = Math.floor(Math.random() * pokemons.length);
     //setCaught(pokemons[randomPokemon]);
-    setCaught(pokemons.concat(pokemonNameInput));
+    setCaught(([...pokemons]).concat(pokemonNameInput));
     SetpokemonNAmeInput("");
 
  };
